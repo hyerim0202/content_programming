@@ -1,0 +1,109 @@
+/* ---------- 기본 설정 ---------- */
+body {
+  background-color: #ffe4ec;   
+  /* 연한 분홍 배경 */
+  color: #777;                 
+  /* 본문: 연한 회색 */
+  font-family: "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+#wrapper {
+  width: 900px;
+  margin: 0 auto;
+  background-color: #fff8fa;   
+  /* 아주 연한 분홍 */
+  padding: 40px;
+  border-radius: 20px;
+  border: 3px solid #f9c6d3;
+}
+
+h1 { font-size: 36px; margin: 0; color: #444; }                 
+/* 이름: 진한 회색 */
+h2 { font-size: 20px; color: #444; border-bottom: 3px solid #f4a7bb; padding-bottom: 6px; }
+h3 { font-size: 16px; font-weight: normal; margin: 4px 0 16px 0; color: #888; }  
+
+/* 영어이름: 연한 회색 */
+
+a { color: #666; text-decoration: none; }
+a:hover { color: #e8738f; text-decoration: underline; }
+
+ul { list-style: none; padding: 0; line-height: 2; }
+li strong { color: #444; }
+
+/* float 해제용 */
+header:after, section:after { content: ""; display: block; clear: both; }
+
+/* ---------- 사진 (공통) ---------- */
+.profile-photo, .big-photo, .small-photo {
+  background-color: #ffd9e3;
+  border: 3px solid #f9c6d3;
+  overflow: hidden;
+}
+.profile-photo img, .big-photo img, .small-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ---------- 상단 ---------- */
+header { margin-bottom: 40px; }
+
+.profile-photo {
+  float: left;
+  width: 220px;
+  height: 260px;
+  border-radius: 10px;
+}
+
+.intro {
+  float: right;
+  width: 600px;
+}
+.intro .tags a {
+  margin-right: 10px;
+  font-weight: bold;
+  background-color: #ffd9e3;
+  color: #555;
+  padding: 4px 10px;
+  border-radius: 15px;
+}
+.intro .tags a:hover { background-color: #f4a7bb; text-decoration: none; }
+.intro p { line-height: 1.8; }
+.contact { color: #999; font-size: 14px; }
+
+/* ---------- 중단 ---------- */
+#about { margin-bottom: 40px; }
+
+.about-text { float: left; width: 280px; }
+.big-photo {
+  float: right;
+  width: 670px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+/* ---------- 하단 ---------- */
+#goal { margin-bottom: 40px; }
+
+.photos { float: left; width: 560px; }
+.small-photo {
+  float: left;
+  width: 160px;
+  height: 160px;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+.goal-text { float: right; width: 280px; }
+.goal-text li:before { content: "• "; color: #f4a7bb; }
+
+/* ---------- 마지막 ---------- */
+footer {
+  border-top: 2px solid #f9c6d3;
+  padding-top: 20px;
+  line-height: 1.8;
+}
+footer h2 { display: inline-block; }
